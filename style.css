@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+
+body,html{
+   
+    font-family: 'Roboto', sans-serif;
+    
+    color:white;
+    background-color: #111624;
+}
+
+.background{
+   
+    
+    width: 85%;
+    
+    height:600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px 100px 100px;
+    margin-top: 150px;
+    float: right;
+}
+
+.logo{
+    background-color: #111624;
+    grid-row-start:1;
+    grid-row-end:1;
+    padding:50px;
+    font-size:30px;
+}
+
+.details{
+    background-color: #111624;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:2;
+    grid-row-end:5;
+    z-index:1;
+    padding:50px;
+}
+
+.details h1{
+    font-size: 55px;
+    text-transform:uppercase;
+    color: #53b696;
+}
+
+.details p{
+    padding-top: 20px;
+    width: 50%;
+    line-height: 30px;
+    font-size: 18px;
+}
+.details div{
+    padding-top: 20px;
+    display: flex;
+}
+
+.details input{
+    padding:18px 55px 18px 12px;
+    background:#2c344b;
+    border: 1px solid #2c344b;
+    font-size: 18px;
+}
+
+.details button{
+    padding:17px 10px;
+    background-color: #54e6af;
+    color:#111624 ;
+    border:0.5px solid #54e6af ;
+    font-size: 15px;
+}
+
+.b{
+    background:url('background.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start:1;
+    grid-row-end:5;
+   
+
+
+}
+
+.b div{
+    background:#53b696;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.pods{
+    display:flex;
+    gap:40px;
+    margin: 15px 0;
+    color:#2c344b;
+}
+
+.pods p{
+    font-size: 23px;
+}
+
+@media only screen and (max-width:1000px){
+    .background{
+    width: 100%;
+    
+    
+   margin-top: 0px;
+   margin-bottom: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px 100px 100px;
+   }
+
+   .details h1{
+    font-size: 45px;
+    text-transform:uppercase;
+    color: #53b696;
+}
+
+.details p{
+    padding-top: 25px;
+    width: 75%;
+    line-height: 30px;
+    font-size: 18px;
+}
+.details div{
+    padding-top: 20px;
+    display: flex;
+}
+
+.details input{
+    padding:18px 55px 18px 12px;
+    background:#2c344b;
+    border: 1px solid #2c344b;
+    font-size: 18px;
+}
+
+.details button{
+    padding:17px 10px;
+    background-color: #54e6af;
+    color:#111624 ;
+    border:0.5px solid #54e6af ;
+    font-size: 15px;
+}
+
+
+}
+
+
+@media only screen and (max-width: 640px) {
+    *{
+        margin:0;
+        padding:0;
+
+    }
+    body,html{
+        
+        font-family: 'Roboto', sans-serif;
+       
+        height: 100%;
+        
+        
+    }
+    
+    
+.b{
+    background-image: none;
+    
+}
+
+.b div{
+    background-color: transparent;
+}
+.background{
+   
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   
+    
+    
+   
+}
+.details{
+    padding: 0px 30px;
+    
+    width: 90%;
+   
+    
+    
+    
+}    
+.details h1{
+   width: 100%;
+    font-size: 30px;
+    color: #356a5c;
+    padding: px;
+    opacity: 1;
+    
+}
+.logo{
+    font-size:15px;
+    text-align: center;
+    padding:30px 30px;
+    
+}
+
+.details p{
+    font-size: 15px;
+    padding: 10px 0px;
+    color: white;
+    line-height: 25px;
+    width: 100%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.details input{
+    width: 90%;
+    padding:10px 10px 10px 15px;
+    border-radius: 100px;
+   
+    margin-bottom: 10px;
+    background-color: #2c344b;
+    border: 1px solid #2c344b;
+    color:white;
+    display: block;
+    
+    
+    
+}
+
+.details button{
+    padding:10px;
+    width: 100%;
+   border-radius: 100px;
+    background-color: #53e6af;
+    border: 1px solid #53e6af;
+
+}
+
+.pods{
+        display:flex;
+        gap:40px;
+        margin: 20px 0;
+        
+        
+}
+}
